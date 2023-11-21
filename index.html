@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ssuimun</title>
+    <link rel="icon" href="SSUIMUN 7.0 White Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="SSUIMUN 7.0 White Logo.png" alt="" height="80px" width="80px">
+                <h1><a href="">SSUIMUN</a></h1>
+            </div>
+            <div class="nav-right">
+                <div class="nav-tags">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="sub-button">
+                    <a href="">Subscribe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Bar  -->
+
+        <div class="mobile-menu-wrapper">
+            <div class="hamburger-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+            </div>
+
+            <ul class="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Landing Page -->
+
+    <div class="hero-section-wrapper">
+
+    </div>
+
+
+    <script>
+        const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
+        document.querySelector('.mobile-menu-wrapper').addEventListener('click', (e) => {
+          mobileMenuWrapper.classList.toggle('open')
+          mobileMenuWrapper.style.animation = 'translateUp' 
+          document.body.classList.toggle('overflow-hidden');
+        })
+      </script>
+</body>
+
+</html>
