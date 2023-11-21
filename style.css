@@ -47,6 +47,7 @@ body {
 }
 
 .nav-tags ul {
+    padding-top: 4px;
     display: flex;
     gap: 35px;
     list-style: none;
@@ -70,7 +71,7 @@ body {
 /* Mobile Navbar  */
 
 .mobile-menu-wrapper .mobile-menu {
-    font-size: 21px;
+    font-size: 27px;
     height: 100svh;
     width: 100%;
     position: absolute;
@@ -84,12 +85,13 @@ body {
 }
 
 @keyframes slideUpDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 
@@ -110,7 +112,7 @@ body {
 .hamburger-menu {
     z-index: 100;
     position: absolute;
-    top: 35px;
+    top: 37px;
     right: 24px;
     cursor: pointer;
     display: none;
@@ -139,7 +141,7 @@ body {
 
 /* Main Landing Page  */
 
-.hero-section-wrapper{
+.hero-section-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -156,4 +158,14 @@ body {
     .hamburger-menu {
         display: block;
     }
+
+    .nav-left h1 {
+        font-size: 23px;
+    }
+
+    .bar1,
+    .bar2 {   
+        width: 22px;    
+    }
+    
 }
