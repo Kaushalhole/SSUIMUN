@@ -160,6 +160,7 @@ body {
     .nav-left h1 {
         font-size: 23px;
         font-weight: 700;
+        color: red;
     }
 
     .bar1,
