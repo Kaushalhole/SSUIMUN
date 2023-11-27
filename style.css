@@ -142,12 +142,21 @@ body {
     margin-top: 6px;
 }
 
+/* Main Landing Page  */
+
+.hero-section-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: #161617; */
+    background-color: #fff7ed;
+}
+
 /* Video  */
 
 .video-container{
     width: 100%;
-    padding: 40px;
-    background-color: #434343;
+    padding: 40px 40px 0px 40px;
 }
 
 .video{
@@ -161,15 +170,33 @@ video{
     width: 100%;
 }
 
-/* Main Landing Page  */
+/* Animation  */
 
-.hero-section-wrapper {
-    position: relative;
+  .scroll-container{
+    overflow: hidden;
     width: 100%;
-    height: 100%;
-    /* background-color: #161617; */
-    background-color: #fff7ed;
-}
+  }
+
+  .scroll-content{
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .txt1, .txt2, .txt3{
+    padding: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 5em;
+  }
 
 /* Footer  */
 
@@ -264,11 +291,16 @@ video{
     }
 
     .video-container{
-        padding: 30px;
+        padding: 30px 30px 0px 30px;
     }
 
     .video{
         border-radius: 2em;
+    }
+
+    .txt1, .txt2, .txt3{
+        padding: 25px;
+        font-size: 3em;
     }
 
 }
@@ -285,6 +317,11 @@ video{
     }
 
     .video-container{
-        padding: 15px;
+        padding: 15px 15px 0px 15px;
+    }
+
+    .txt1, .txt2, .txt3{
+        padding: 20px;
+        font-size: 1.7em;
     }
 }
