@@ -37,18 +37,19 @@
         <!-- Mobile Nav Bar  -->
 
         <div class="mobile-menu-wrapper">
-            <div class="hamburger-menu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
+            <div id="hamburger-menu" class="hamburger-menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
             </div>
 
-            <ul class="mobile-menu">
+            <ul id="mobile-menu" class="mobile-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Event</a></li>
                 <li><a href="#">Schedule</a></li>
                 <li><a href="#">Tickets</a></li>
             </ul>
         </div>
+
     </header>
 
 
@@ -71,9 +72,9 @@
 
     <div class="scroll-container">
         <div class="scroll-content">
-            <div class="txt1">EXPERIENCES</div>
-            <div class="txt2">CONTENTS</div>
-            <div class="txt3">ENVIRONMENTS</div>
+            <div class="txt1">ignite</div>
+            <div class="txt2">inspire</div>
+            <div class="txt3">impact</div>
         </div>
     </div>
 
@@ -109,14 +110,11 @@
         </div>
     </div>
 
-
     <script>
-        const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
-        document.querySelector('.mobile-menu-wrapper').addEventListener('click', (e) => {
-            mobileMenuWrapper.classList.toggle('open')
-            mobileMenuWrapper.style.animation = 'translateUp'
-            document.body.classList.toggle('overflow-hidden');
-        })
+        function onClickMenu(){
+            document.getElementById("hamburger-menu").classList.toggle("icon");
+            document.getElementById("mobile-menu").classList.toggle("change");
+        }
     </script>
 </body>
 
