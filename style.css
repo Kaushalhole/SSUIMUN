@@ -178,29 +178,31 @@ body {
 .social-nav ul{
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 30px;
 }
 
 .social-nav ul img{
-    height: 50px;
+    height: 24px;
     filter: invert(100%) sepia(0%) saturate(6198%) hue-rotate(206deg) brightness(103%) contrast(113%);
 }
 
 .footer-nav ul{
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 30px;
 }
 
 .footer-nav ul a{
     text-decoration: none;
     color: #fff;
+    font-size: 13px;
 }
 
 .rights{
+    font-size: 13px;
     width: 100%;
-    margin: 50px 0px 30px 0px;
+    margin: 30px 0px 30px 0px;
     display: flex;
     color: #fff;
     justify-content: space-between;
@@ -230,6 +232,10 @@ body {
         gap: 10px;
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+
+    .footer-nav ul{
+        margin-top: 5px;
     }
 
 }
