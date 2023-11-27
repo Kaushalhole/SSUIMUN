@@ -142,6 +142,24 @@ body {
     margin-top: 6px;
 }
 
+/* Video  */
+
+.video-container{
+    width: 100%;
+    padding: 40px;
+}
+
+.video{
+    width: 100%;
+    border-radius: 3em;
+    overflow: hidden;
+}
+
+video{
+    object-fit: cover;
+    width: 100%;
+}
+
 /* Main Landing Page  */
 
 .hero-section-wrapper {
@@ -244,9 +262,18 @@ body {
         margin-top: 5px;
     }
 
+    .video-container{
+        padding: 30px;
+    }
+
+    .video{
+        border-radius: 2em;
+    }
+
 }
 
 @media screen and (max-width: 480px){
+    
     .footer-nav ul{
         /* flex-wrap: wrap; */
         gap: 30px;
@@ -254,5 +281,9 @@ body {
 
     .social-nav ul{
         gap: 30px;
+    }
+
+    .video-container{
+        padding: 15px;
     }
 }

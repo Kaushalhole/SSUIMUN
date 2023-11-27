@@ -16,7 +16,7 @@
 
         <div class="navbar">
             <div class="nav-left">
-                <img src="SSUIMUN 7.0 Black Logo.png" alt="" height="80px" width="80px">
+                <img src="Images/SSUIMUN 7.0 Black Logo.png" alt="" height="80px" width="80px">
                 <h1><a href="">SSUIMUN</a></h1>
             </div>
             <div class="nav-right">
@@ -51,10 +51,20 @@
         </div>
     </header>
 
+
     <!-- Main Landing Page -->
 
     <div class="hero-section-wrapper">
 
+    </div>
+
+    <!-- Video section  -->
+    <div class="video-container">
+        <div class="video">
+            <video autoplay muted>
+                <source src="ladak.mp4">
+            </video>
+        </div>
     </div>
 
     <!-- Footer  -->
@@ -64,9 +74,9 @@
             <div class="content">
                 <div class="social-nav">
                     <ul>
-                        <li><a href=""><img src="icons8-twitter.svg" alt=""></a></li>
-                        <li><a href=""><img src="icons8-instagram.svg" alt=""></a></li>
-                        <li><a href=""><img src="icons8-youtube.svg" alt=""></a></li>
+                        <li><a href=""><img src="Images/icons8-twitter.svg" alt=""></a></li>
+                        <li><a href=""><img src="Images/icons8-instagram.svg" alt=""></a></li>
+                        <li><a href=""><img src="Images/icons8-youtube.svg" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="footer-nav">
@@ -79,8 +89,12 @@
                 </div>
             </div>
             <div class="rights">
-                <div><p>&copy; 2024</p></div>
-                <div><p>All rights reserverd</p></div>   
+                <div>
+                    <p>&copy; 2024</p>
+                </div>
+                <div>
+                    <p>All rights reserverd</p>
+                </div>
             </div>
         </div>
     </div>
@@ -89,11 +103,11 @@
     <script>
         const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
         document.querySelector('.mobile-menu-wrapper').addEventListener('click', (e) => {
-          mobileMenuWrapper.classList.toggle('open')
-          mobileMenuWrapper.style.animation = 'translateUp' 
-          document.body.classList.toggle('overflow-hidden');
+            mobileMenuWrapper.classList.toggle('open')
+            mobileMenuWrapper.style.animation = 'translateUp'
+            document.body.classList.toggle('overflow-hidden');
         })
-      </script>
+    </script>
 </body>
 
 </html>
