@@ -175,7 +175,7 @@ video{
       transform: translateX(100%);
     }
     100% {
-      transform: translateX(-120%);
+      transform: translateX(-110%);
     }
   }
 
