@@ -147,6 +147,7 @@ body {
 .video-container{
     width: 100%;
     padding: 40px;
+    background-color: #434343;
 }
 
 .video{
