@@ -15,6 +15,38 @@ body {
     background-color: #fff7ed;
 }
 
+/* Pre-loder  */
+
+#pre-loader .bg-black {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 67px;
+    color: orange;
+    font-weight: 600;
+    background-color: rgb(28, 28, 28);
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+#pre-loader .bg-black div {
+    position: relative;
+    top: -5%;
+}
+.hidden {
+    display: none;
+}
+
+@keyframes animateTop {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
 /* Laptop Navbar View */
 
 .navbar {
@@ -24,7 +56,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     z-index: 2;
     width: 100%;
 }
@@ -141,8 +173,12 @@ body {
 .hero-section-wrapper {
     position: relative;
     width: 100%;
-    height: 12%;
-    /* background-color: #fff7ed; */
+    height: 91vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Video  */
@@ -203,6 +239,7 @@ video{
 }
 
 .border{
+    margin-top: 20px;
     width: 80%;
     border-top: 1px solid #434343;
     display: flex;
@@ -254,6 +291,34 @@ video{
 }
 
 
+/* Gallery CSS  */
+
+.gallery-container{
+    min-height: 100vh;
+}
+
+.gallery{
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+}
+
+.box{
+    background-size: cover;
+    background-position: center;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
 
 @media screen and (max-width: 768px) {
     .nav-right {
@@ -295,7 +360,6 @@ video{
         padding: 25px;
         font-size: 3em;
     }
-
 }
 
 @media screen and (max-width: 480px){
@@ -316,6 +380,19 @@ video{
     .txt1, .txt2, .txt3{
         padding: 20px;
         font-size: 1.7em;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center; 
+    }
+
+    .box{
+        width: 300px;
+        height: 260px;
+        /* margin-top: 10px; */
     }
 }
 

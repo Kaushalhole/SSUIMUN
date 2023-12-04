@@ -10,6 +10,15 @@
 </head>
 
 <body>
+
+    <!-- Pre-loder  -->
+
+    <div id="pre-loader">
+        <div class="bg-black">
+
+        </div>
+    </div>
+
     <header>
 
         <!-- Navbar -->
@@ -25,7 +34,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Event</a></li>
                         <li><a href="#">Schedule</a></li>
-                        <li><a href="#">Tickets</a></li>
+                        <li><a href="Gallery.html" target="_blank">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="sub-button">
@@ -46,7 +55,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Event</a></li>
                 <li><a href="#">Schedule</a></li>
-                <li><a href="#">Tickets</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
             </ul>
         </div>
 
@@ -56,7 +65,8 @@
     <!-- Main Landing Page -->
 
     <div class="hero-section-wrapper">
-
+        <h1>SSUIMUN</h1>
+        <p>This will be main landing Page</p>
     </div>
 
     <!-- Video section  -->
@@ -95,7 +105,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Event</a></li>
                         <li><a href="#">Schedule</a></li>
-                        <li><a href="#">Tickets</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
                     </ul>
                 </div>
             </div>
@@ -110,11 +120,33 @@
         </div>
     </div>
 
+    <!-- Navbar-Script  -->
     <script>
-        function onClickMenu(){
+        function onClickMenu() {
             document.getElementById("hamburger-menu").classList.toggle("icon");
             document.getElementById("mobile-menu").classList.toggle("change");
         }
+    </script>
+
+    <!-- Pre-loder Script -->
+    <script>
+        const wordsArr = ['IGNITE', 'INSIPRE', 'IMPACT', '']
+        const container = document
+            .querySelector(
+                `#pre-loader .bg-black`
+            );
+        const delay = (delayInms) => {
+            return new Promise((resolve) => setTimeout(resolve, delayInms));
+        };
+        (async function animate() {
+            for (let i = 0; i < wordsArr.length; i++) {
+                await delay(1000);
+                container.textContent = wordsArr[i]
+            }
+
+            container.style.animation = 'animateTop 1s forwards'
+            container.classList.add('hidden');
+        })();
     </script>
 </body>
 

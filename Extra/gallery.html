@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="Images/SSUIMUN 7.0 Black Logo.png" alt="" height="80px" width="80px">
+                <h1><a href="">SSUIMUN</a></h1>
+            </div>
+            <div class="nav-right">
+                <div class="nav-tags">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="sub-button">
+                    <a href="">Subscribe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Bar  -->
+
+        <div class="mobile-menu-wrapper">
+            <div id="hamburger-menu" class="hamburger-menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+            </div>
+
+            <ul id="mobile-menu" class="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="gallery">
+        <figure class="gallery__item--1">
+            <img src="Images/Gallery_Images/Pic_1.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--2">
+            <img src="Images/Gallery_Images/Pic_2.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--3">
+            <img src="Images/Gallery_Images/Pic_3.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--4">
+            <img src="Images/Gallery_Images/Pic_4.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--5">
+            <img src="Images/Gallery_Images/Pic_5.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--6">
+            <img src="Images/Gallery_Images/Pic_6.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--7">
+            <img src="Images/Gallery_Images/Pic_7.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--8">
+            <img src="Images/Gallery_Images/Pic_8.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--9">
+            <img src="Images/Gallery_Images/Pic_9.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+          <figure class="gallery__item--10">
+            <img src="Images/Gallery_Images/Pic_10.jpg" class="gallery__img" alt="Image 1">
+          </figure>
+    </div>
+
+    <script>
+        function onClickMenu(){
+            document.getElementById("hamburger-menu").classList.toggle("icon");
+            document.getElementById("mobile-menu").classList.toggle("change");
+        }
+    </script>
+</body>
+</html>
