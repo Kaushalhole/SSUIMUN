@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <!-- Navbar -->
+
+        <div class="navbar  mx-auto max-w-[1470px] w-[90%]">
+            <div class="nav-left">
+                <img src="./2023/Images/SSUIMUN 7.0 Black Logo.png" alt="" height="80px" width="80px">
+                <h1 class="text-[27px] font-semibold"><a href="/">SSUIMUN</a></h1>
+            </div>
+            <div class="nav-right">
+                <div class="nav-tags">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="sub-button">
+                    <a href="">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Bar  -->
+
+        <div class="mobile-menu-wrapper">
+            <div id="hamburger-menu" class="hamburger-menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+            </div>
+
+            <ul id="mobile-menu" class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- Gallery  -->
+
+    <div class="gallery-container mx-auto max-w-[1470px] w-[90%] mt-12">
+        <div class="gallery">
+            <div class="box row-2" style="background-image: url(https://images.unsplash.com/photo-1531327431456-837da4b1d562?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box row-2" style="background-image: url(https://images.unsplash.com/photo-1615589574041-a9c02a3b0856?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box " style="background-image: url(https://images.unsplash.com/photo-1558981001-792f6c0d5068?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1638381225937-21e6de4b1bf2?q=80&w=2761&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1627120893491-81b8a4fa4f3a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box row-2" style="background-image: url(https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1612544448445-b8232cff3b6c?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+            <div class="box " style="background-image: url(https://images.unsplash.com/photo-1526550517342-e086b387edda?q=80&w=3029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">.</div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <div id="footer">
+        <div class="border">
+            <div class="content">
+                <div class="social-nav">
+                    <ul>
+                        <li><a href=""><img src="Images/icons8-twitter.svg" alt=""></a></li>
+                        <li><a href=""><img src="Images/icons8-instagram.svg" alt=""></a></li>
+                        <li><a href=""><img src="Images/icons8-youtube.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rights">
+                <div>
+                    <p>&copy; 2024</p>
+                </div>
+                <div>
+                    <p>All rights reserverd</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navbar Script  -->
+
+    <script>
+        function onClickMenu(){
+            document.getElementById("hamburger-menu").classList.toggle("icon");
+            document.getElementById("mobile-menu").classList.toggle("change");
+        }
+    </script>
+</body>
+</html>

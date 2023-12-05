@@ -12,9 +12,9 @@
     <body>
         <!-- Pre-loder  -->
 
-        <!-- <div id="pre-loader">
+        <div id="pre-loader">
             <div class="bg-black"></div>
-        </div> -->
+        </div>
 
         <header>
             <!-- Navbar -->
@@ -22,12 +22,12 @@
             <div class="navbar mx-auto max-w-[1470px] w-[90%]">
                 <div class="nav-left">
                     <img
-                        src="Images/SSUIMUN 7.0 Black Logo.png"
+                        src="./2023/Images/SSUIMUN 7.0 Black Logo.png"
                         alt=""
                         height="80px"
                         width="80px"
                     />
-                    <h1 class="">
+                    <h1 class="relative -top-1">
                         <a href="/" class="text-[27px] font-semibold">SSUIMUN</a>
                     </h1>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="nav-tags">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Our Team</a></li>
+                            <li><a href="our_team.html">Our Team</a></li>
                             <li><a href="Gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -60,7 +60,7 @@
 
                 <ul id="mobile-menu" class="mobile-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Our Team</a></li>
+                    <li><a href="our_team.html">Our Team</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -98,14 +98,14 @@
                         <div class="flex flex-col gap-[8px] pt-12">
                             <div class="max-h-[250px] max-w-[350px]">
                                 <img
-                                    src="Images/home_page_images/p1.jpg"
+                                    src="./2023/Images/home_page_images/p1.jpg"
                                     alt=""
                                     class="h-full w-full object-cover rounded-xl"
                                 />
                             </div>
                             <div class="max-h-[250px] max-w-[350px]">
                                 <img
-                                    src="Images/home_page_images/p2.jpg"
+                                    src="./2023/Images/home_page_images/p2.jpg"
                                     alt=""
                                     class="h-full w-full object-cover rounded-xl"
                                 />
@@ -114,14 +114,14 @@
                         <div class="flex flex-col gap-[8px]">
                             <div class="max-h-[250px] max-w-[350px]">
                                 <img
-                                    src="Images/home_page_images/p3.jpg"
+                                    src="./2023/Images/home_page_images/p3.jpg"
                                     alt=""
                                     class="h-full w-full object-cover rounded-xl"
                                 />
                             </div>
                             <div class="max-h-[250px] max-w-[350px]">
                                 <img
-                                    src="Images/home_page_images/p4.jpg"
+                                    src="./2023/Images/home_page_images/p4.jpg"
                                     alt=""
                                     class="h-full w-full object-cover rounded-xl"
                                 />
@@ -136,7 +136,7 @@
         <div class="mx-auto max-w-[1470px] w-[90%]">
             <div class="">
                 <video autoplay muted loop class="rounded-[24px] mt-12 h-auto">
-                    <source src="video.mp4" />
+                    <source src="./2023/Images/home_page_images/video.mp4" />
                 </video>
             </div>
         </div>
@@ -315,23 +315,23 @@
 
         <logo-slider>
             <div>
-                <img src="./Images/home_page_images/sp1.png" />
-                <img src="./Images/home_page_images/sp2.png" />
-                <img src="./Images/home_page_images/sp3.png" />
-                <img src="./Images/home_page_images/sp4.png" />
-                <img src="./Images/home_page_images/sp5.png" />
-                <img src="./Images/home_page_images/sp6.png" />
-                <img src="./Images/home_page_images/sp7.png" />
-                <img src="./Images/home_page_images/sp8.png" />
-                <img src="./Images/home_page_images/sp9.png" />
-                <img src="./Images/home_page_images/sp10.png" />
+                <img src="./2023/Images/Sponsors/sp1.png" />
+                <img src="./2023/Images/Sponsors/sp2.png" />
+                <img src="./2023/Images/Sponsors/sp3.png" />
+                <img src="./2023/Images/Sponsors/sp4.png" />
+                <img src="./2023/Images/Sponsors/sp5.png" />
+                <img src="./2023/Images/Sponsors/sp6.png" />
+                <img src="./2023/Images/Sponsors/sp7.png" />
+                <img src="./2023/Images/Sponsors/sp8.png" />
+                <img src="./2023/Images/Sponsors/sp9.png" />
+                <img src="./2023/Images/Sponsors/sp10.png" />
                 <!-- <img src="./Images/home_page_images/sp11.png" /> -->
                 <!-- <img src="./Images/home_page_images/sp11.png" /> -->
                 <!-- <img src="./Images/home_page_images/sp1.png" /> -->
                 <!-- <img src="./Images/home_page_images/sp1.png" /> -->
             </div>
         </logo-slider>
-
+<!-- Footer -->
 
         <div id="footer" class="max-w-[1470px] w-[90%] mx-auto my-12">
             <div class="flex flex-col items-center border-t mt-[20px] w-full">
@@ -392,6 +392,7 @@
 
         <!-- Pre-loder Script -->
         <script>
+            document.body.classList.add('overflow-hidden');
             const wordsArr = ["IGNITE", "INSIPRE", "IMPACT", ""];
             const container = document.querySelector(`#pre-loader .bg-black`);
             const delay = (delayInms) => {
@@ -405,6 +406,7 @@
 
                 container.style.animation = "animateTop 1s forwards";
                 container.classList.add("hidden");
+                document.body.classList.remove('overflow-hidden');
             })();
         </script>
 
