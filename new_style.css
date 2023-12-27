@@ -5,11 +5,13 @@ body{
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .title{
     font-size: 3em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .grid{
@@ -32,10 +34,14 @@ body{
     height: auto;
     border-radius: 5px;
 }
+.discription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 p{
     text-align: center;
     width: 80%;
-    margin: auto;
-    margin-bottom: 5rem;
-
+    margin-bottom: 4rem;
 }
+
