@@ -1,0 +1,12 @@
+.rules{
+    font-size: 15px;
+    margin: 30px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.bold{
+    font-weight: bold;
+}
