@@ -1,0 +1,52 @@
+.rules{
+    margin: 30px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#heading{
+    font-size: 20px;
+    font-weight: 500;
+}
+.rules p{
+    font-size: 15px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+label{
+    font-size: 15px;
+}
+
+#check-terms{
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-btn{
+    margin-top: .8rem;
+    height: 35px;
+    width: 80px;
+    background-color: rgb(28, 28, 28);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 768px){
+    .rules{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .rules{
+        padding: 20px;
+    }
+}
