@@ -1,596 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ssuimun</title>
-        <link rel="icon" href="SSUIMUN 7.0 White Logo.png" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css" />
-    </head>
 
-    <body>
-        <!-- Pre-loder  -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ssuimun</title>
+    <link rel="icon" href="SSUIMUN 7.0 White Logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div id="pre-loader">
-            <div class="bg-black"></div>
-        </div>
+<body>
+    <!-- Pre-loder  -->
 
-        <!-- campus ambassador -->
+    <div id="pre-loader">
+        <div class="bg-black"></div>
+    </div>
 
-        <!-- <div id="campus">
+    <!-- campus ambassador -->
+
+    <!-- <div id="campus">
             <div class="cp-content">
                 <p>Apply for campus ambassador <a href="cpAmbassador.html">Apply here</a></p>
             </div>
         </div> -->
 
-        <header>
-            <!-- Navbar -->
+    <header>
+        <!-- Navbar -->
 
-            <div class="navbar mx-auto max-w-[1470px] w-[90%]">
-                <div class="nav-left">
-                    <img
-                        src="./2023/Images/SSUIMUN 7.0 Black Logo.png"
-                        alt=""
-                        height="80px"
-                        width="80px"
-                    />
-                    <h1 class="relative -top-1">
-                        <a href="/" class="text-[27px] font-semibold">SSUIMUN</a>
-                    </h1>
+        <div class="navbar mx-auto max-w-[1470px] w-[90%]">
+            <div class="nav-left">
+                <img src="./2023/Images/SSUIMUN 7.0 Black Logo.png" alt="" height="80px" width="80px" />
+                <h1 class="relative -top-1">
+                    <a href="/" class="text-[27px] font-semibold">SSUIMUN</a>
+                </h1>
+            </div>
+            <div class="nav-right">
+                <div class="nav-tags">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our_team.html">Our Team</a></li>
+                        <li><a href="new_gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="nav-right">
-                    <div class="nav-tags">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="our_team.html">Our Team</a></li>
-                            <li><a href="new_gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="sub-button">
-                        <a href="https://app.srisriuniversity.edu.in/ssuimun-registration/" target="_blank">Register</a>
-                    </div>
+                <div class="sub-button">
+                    <a href="https://app.srisriuniversity.edu.in/ssuimun-registration/" target="_blank">Register</a>
                 </div>
             </div>
+        </div>
 
-            <!-- Mobile Nav Bar  -->
+        <!-- Mobile Nav Bar  -->
 
-            <div class="mobile-menu-wrapper">
-                <div
-                    id="hamburger-menu"
-                    class="hamburger-menu"
-                    onclick="onClickMenu()"
-                >
-                    <div id="bar1" class="bar"></div>
-                    <div id="bar2" class="bar"></div>
+        <div class="mobile-menu-wrapper">
+            <div id="hamburger-menu" class="hamburger-menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+            </div>
+
+            <ul id="mobile-menu" class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our_team.html">Our Team</a></li>
+                <li><a href="new_gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Landing Page -->
+
+    <div class="mx-auto max-w-[1470px] w-full px-[10%] md:px-0">
+        <div class="h-full mt-12 w-full">
+            <div class="flex h-full flex-wrap w-full justify-center items-center gap-[44px]">
+                <div class="flex w-full md:w-[35%] h-full flex-col items-center justify-center gap-[16px]">
+                    <div class="flex flex-col">
+                        <h1 class="text-4xl font-bold">SSUIMUN 7.0</h1>
+                        <p class="mt-2">
+                            At SSUIMUN, we foster leadership and unconventional thinking, shaping global leaders.
+                            Committed to a non-commercial approach, we uphold the essence of the United Nations.
+                        </p>
+                    </div>
+                    <div class="self-start">
+                        <a target="_blank" href="https://app.srisriuniversity.edu.in/ssuimun-registration/"
+                            class="rounded-md bg-black px-[16px] py-[8px] text-[15px]  md:text-[13px] font-semibold text-white">
+                            Register
+                        </a>
+                    </div>
                 </div>
 
-                <ul id="mobile-menu" class="mobile-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="our_team.html">Our Team</a></li>
-                    <li><a href="new_gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-
-        <!-- Main Landing Page -->
-
-        <div class="mx-auto max-w-[1470px] w-full px-[10%] md:px-0">
-            <div class="h-full mt-12 w-full">
-                <div
-                    class="flex h-full flex-wrap w-full justify-center items-center gap-[44px]"
-                >
-                    <div
-                        class="flex w-full md:w-[35%] h-full flex-col items-center justify-center gap-[16px]"
-                    >
-                        <div class="flex flex-col">
-                            <h1 class="text-4xl font-bold">SSUIMUN 7.0</h1>
-                            <p class="mt-2">
-                                At SSUIMUN, we foster leadership and unconventional thinking, shaping global leaders. Committed to a non-commercial approach, we uphold the essence of the United Nations.
-                            </p>
+                <div class="flex gap-[8px] md:w-1/2 w-full">
+                    <div class="flex flex-col gap-[8px] pt-12">
+                        <div class="max-h-[250px] max-w-[350px]">
+                            <img src="./2023/Images/home_page_images/p1.jpg" alt=""
+                                class="h-full w-full object-cover rounded-xl" />
                         </div>
-                        <div class="self-start">
-                            <a
-                            target="_blank"
-                            href="https://app.srisriuniversity.edu.in/ssuimun-registration/"
-                                class="rounded-md bg-black px-[16px] py-[8px] text-[15px]  md:text-[13px] font-semibold text-white"
-                            >
-                                Register
-                            </a>
+                        <div class="max-h-[250px] max-w-[350px]">
+                            <img src="./2023/Images/home_page_images/p2.jpg" alt=""
+                                class="h-full w-full object-cover rounded-xl" />
                         </div>
                     </div>
-
-                    <div class="flex gap-[8px] md:w-1/2 w-full">
-                        <div class="flex flex-col gap-[8px] pt-12">
-                            <div class="max-h-[250px] max-w-[350px]">
-                                <img
-                                    src="./2023/Images/home_page_images/p1.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover rounded-xl"
-                                />
-                            </div>
-                            <div class="max-h-[250px] max-w-[350px]">
-                                <img
-                                    src="./2023/Images/home_page_images/p2.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover rounded-xl"
-                                />
-                            </div>
+                    <div class="flex flex-col gap-[8px]">
+                        <div class="max-h-[250px] max-w-[350px]">
+                            <img src="./2023/Images/home_page_images/p3.jpg" alt=""
+                                class="h-full w-full object-cover rounded-xl" />
                         </div>
-                        <div class="flex flex-col gap-[8px]">
-                            <div class="max-h-[250px] max-w-[350px]">
-                                <img
-                                    src="./2023/Images/home_page_images/p3.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover rounded-xl"
-                                />
-                            </div>
-                            <div class="max-h-[250px] max-w-[350px]">
-                                <img
-                                    src="./2023/Images/home_page_images/p4.jpg"
-                                    alt=""
-                                    class="h-full w-full object-cover rounded-xl"
-                                />
-                            </div>
+                        <div class="max-h-[250px] max-w-[350px]">
+                            <img src="./2023/Images/home_page_images/p4.jpg" alt=""
+                                class="h-full w-full object-cover rounded-xl" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Video section  -->
-        <div class="mx-auto max-w-[1470px] w-[90%]">
-            <div class="">
-                <video autoplay muted loop class="rounded-[24px] mt-12 h-auto">
-                    <source src="./2023/Images/home_page_images/video.mp4" />
-                </video>
+    <!-- Video section  -->
+    <div class="mx-auto max-w-[1470px] w-[90%]">
+        <div class="">
+            <video autoplay muted loop class="rounded-[24px] mt-12 h-auto">
+                <source src="./2023/Images/home_page_images/video.mp4" />
+            </video>
+        </div>
+    </div>
+
+    <!-- Why join us -->
+    <div class="my-12">
+        <h1 class="text-[51px] text-center font-semibold">Why Join Us?</h1>
+    </div>
+    <div class="mx-auto max-w-[1470px] w-[90%]">
+        <div class="mx-auto flex grid-cols-9 flex-col p-2 md:grid">
+            <!-- left -->
+            <div class="flex flex-row-reverse md:contents">
+                <div class="col-start-1 col-end-5 my-4 ml-auto rounded-xl p-4 shadow-md">
+                    <h3 class="mb-1 text-lg font-semibold">
+                        Certification
+                    </h3>
+                    <p class=" leading-tight">
+                        Add value to you CV with and SSUIMUN certificate
+                        which speaks to your excellent communication skills,
+                        knowledge of current affairs and much more
+                    </p>
+                </div>
+                <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                    <div class="flex h-full w-6 items-center justify-center">
+                        <div class="pointer-events-none h-full w-1 bg-black/70"></div>
+                    </div>
+                    <div class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"></div>
+                </div>
             </div>
-        </div>
-
-        <!-- Why join us -->
-        <div class="my-12">
-            <h1 class="text-[51px] text-center font-semibold">Why Join Us?</h1>
-        </div>
-        <div class="mx-auto max-w-[1470px] w-[90%]">
-            <div class="mx-auto flex grid-cols-9 flex-col p-2 md:grid">
-                <!-- left -->
-                <div class="flex flex-row-reverse md:contents">
-                    <div
-                        class="col-start-1 col-end-5 my-4 ml-auto rounded-xl p-4 shadow-md"
-                    >
-                        <h3 class="mb-1 text-lg font-semibold">
-                            Certification
-                        </h3>
-                        <p class=" leading-tight">
-                            Add value to you CV with and SSUIMUN certificate
-                            which speaks to your excellent communication skills,
-                            knowledge of current affairs and much more
-                        </p>
+            <!-- right -->
+            <div class="flex md:contents">
+                <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                    <div class="flex h-full w-6 items-center justify-center">
+                        <div class="pointer-events-none h-full w-1 bg-black/70"></div>
                     </div>
-                    <div
-                        class="relative col-start-5 col-end-6 mr-10 md:mx-auto"
-                    >
-                        <div
-                            class="flex h-full w-6 items-center justify-center"
-                        >
-                            <div
-                                class="pointer-events-none h-full w-1 bg-black/70"
-                            ></div>
-                        </div>
-                        <div
-                            class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"
-                        ></div>
-                    </div>
+                    <div class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"></div>
                 </div>
-                <!-- right -->
-                <div class="flex md:contents">
-                    <div
-                        class="relative col-start-5 col-end-6 mr-10 md:mx-auto"
-                    >
-                        <div
-                            class="flex h-full w-6 items-center justify-center"
-                        >
-                            <div
-                                class="pointer-events-none h-full w-1 bg-black/70"
-                            ></div>
-                        </div>
-                        <div
-                            class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"
-                        ></div>
-                    </div>
-                    <div
-                        class="col-start-6 col-end-10 my-4 mr-auto rounded-xl p-4 shadow-md"
-                    >
-                        <h3 class="mb-1 text-lg font-semibold">
-                            Improved Soft Skills
-                        </h3>
-                        <p class=" leading-tight">
-                            SSUIMUN events offer valuable opportunities to
-                            enhance essential soft skills like public speaking,
-                            critical thinking, problem-solving, teamwork, and
-                            negotiation. Participants also gain increased global
-                            awareness. These skills are highly prized by future
-                            employers across all fields
-                        </p>
-                    </div>
+                <div class="col-start-6 col-end-10 my-4 mr-auto rounded-xl p-4 shadow-md">
+                    <h3 class="mb-1 text-lg font-semibold">
+                        Improved Soft Skills
+                    </h3>
+                    <p class=" leading-tight">
+                        SSUIMUN events offer valuable opportunities to
+                        enhance essential soft skills like public speaking,
+                        critical thinking, problem-solving, teamwork, and
+                        negotiation. Participants also gain increased global
+                        awareness. These skills are highly prized by future
+                        employers across all fields
+                    </p>
                 </div>
-                <!-- left -->
-                <div class="flex flex-row-reverse md:contents">
-                    <div
-                        class="col-start-1 col-end-5 my-4 ml-auto rounded-xl p-4 shadow-md"
-                    >
-                        <h3 class="mb-1 text-lg font-semibold">
-                            Big Cash Prize
-                        </h3>
-                        <p class=" leading-tight">
-                            The top-performing delegates at SSUIMUN will have
-                            the chance to win massive cash prizes. Along with
-                            the cash prizes, participants and winners are
-                            awarded with SSUIMUN goodies and sale vouchers from
-                            top brands
-                        </p>
-                    </div>
-                    <div
-                        class="relative col-start-5 col-end-6 mr-10 md:mx-auto"
-                    >
-                        <div
-                            class="flex h-full w-6 items-center justify-center"
-                        >
-                            <div
-                                class="pointer-events-none h-full w-1 bg-black/70"
-                            ></div>
-                        </div>
-                        <div
-                            class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"
-                        ></div>
-                    </div>
+            </div>
+            <!-- left -->
+            <div class="flex flex-row-reverse md:contents">
+                <div class="col-start-1 col-end-5 my-4 ml-auto rounded-xl p-4 shadow-md">
+                    <h3 class="mb-1 text-lg font-semibold">
+                        Big Cash Prize
+                    </h3>
+                    <p class=" leading-tight">
+                        The top-performing delegates at SSUIMUN will have
+                        the chance to win massive cash prizes. Along with
+                        the cash prizes, participants and winners are
+                        awarded with SSUIMUN goodies and sale vouchers from
+                        top brands
+                    </p>
                 </div>
-                <!-- right -->
-                <div class="flex md:contents">
-                    <div
-                        class="relative col-start-5 col-end-6 mr-10 md:mx-auto"
-                    >
-                        <div
-                            class="flex h-full w-6 items-center justify-center"
-                        >
-                            <div
-                                class="pointer-events-none h-full w-1 bg-black/70"
-                            ></div>
-                        </div>
-                        <div
-                            class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"
-                        ></div>
+                <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                    <div class="flex h-full w-6 items-center justify-center">
+                        <div class="pointer-events-none h-full w-1 bg-black/70"></div>
                     </div>
-                    <div
-                        class="col-start-6 col-end-10 my-4 mr-auto rounded-xl p-4 shadow-md"
-                    >
-                        <h3 class="mb-1 text-lg font-semibold">
-                            Great Socials and Hospitality
-                        </h3>
-                        <p class=" leading-tight">
-                            You get to experience vibrant social nights, and the
-                            chance to forge global friendships. SSUIMUN is
-                            renowned for its exceptional hospitality in the
-                            region. Enjoy comfortable accommodations and meals
-                            provided by us.
-                        </p>
-                    </div>
+                    <div class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"></div>
                 </div>
-                <!-- left -->
-                <div class="flex flex-row-reverse md:contents">
-                    <div
-                        class="col-start-1 col-end-5 my-4 ml-auto rounded-xl p-4 shadow-md"
-                    >
-                        <h3 class="mb-1 text-lg font-semibold">
-                            Experienced Executive Board Members
-                        </h3>
-                        <p class=" leading-tight">
-                            SSUIMUN events are led by exceptional executive
-                            board members highly experienced in chairing MUNs
-                            professionally. These individuals will be there to
-                            support and moderate the discussion throughout the
-                            event and to help the delegates have a positive and
-                            rewarding experience.
-                        </p>
+            </div>
+            <!-- right -->
+            <div class="flex md:contents">
+                <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                    <div class="flex h-full w-6 items-center justify-center">
+                        <div class="pointer-events-none h-full w-1 bg-black/70"></div>
                     </div>
-                    <div
-                        class="relative col-start-5 col-end-6 mr-10 md:mx-auto"
-                    >
-                        <div
-                            class="flex h-full w-6 items-center justify-center"
-                        >
-                            <div
-                                class="pointer-events-none h-full w-1 bg-black/70"
-                            ></div>
-                        </div>
-                        <div
-                            class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"
-                        ></div>
+                    <div class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"></div>
+                </div>
+                <div class="col-start-6 col-end-10 my-4 mr-auto rounded-xl p-4 shadow-md">
+                    <h3 class="mb-1 text-lg font-semibold">
+                        Great Socials and Hospitality
+                    </h3>
+                    <p class=" leading-tight">
+                        You get to experience vibrant social nights, and the
+                        chance to forge global friendships. SSUIMUN is
+                        renowned for its exceptional hospitality in the
+                        region. Enjoy comfortable accommodations and meals
+                        provided by us.
+                    </p>
+                </div>
+            </div>
+            <!-- left -->
+            <div class="flex flex-row-reverse md:contents">
+                <div class="col-start-1 col-end-5 my-4 ml-auto rounded-xl p-4 shadow-md">
+                    <h3 class="mb-1 text-lg font-semibold">
+                        Experienced Executive Board Members
+                    </h3>
+                    <p class=" leading-tight">
+                        SSUIMUN events are led by exceptional executive
+                        board members highly experienced in chairing MUNs
+                        professionally. These individuals will be there to
+                        support and moderate the discussion throughout the
+                        event and to help the delegates have a positive and
+                        rewarding experience.
+                    </p>
+                </div>
+                <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                    <div class="flex h-full w-6 items-center justify-center">
+                        <div class="pointer-events-none h-full w-1 bg-black/70"></div>
                     </div>
+                    <div class="absolute bg-neutral-800 top-1/2 -mt-3 h-6 w-6 rounded-full shadow"></div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- FAQ Video -->
+    <!-- FAQ Section -->
 
-        <div class="video-container">
+    <div class="my-12">
+        <h1 class="text-[51px] text-center font-semibold">FAQ's</h1>
+    </div>
+
+    <div class="faq-outer">
+
+        <div id="faq_1" class="faq">
+            <div class="slide">
+                <div class="faq-content">What is MUN ?</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
+                </div>
+            </div>
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/o7M-gGccaYA?si=xQ_fV84y0F0s8nMx" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>What is MUN ?</h3>
+            </div>
+
+        </div>
+
+        <div id="faq_2" class="faq">
+            <div class="slide">
+                <div class="faq-content">About SSU!</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/btoak0hTh60?si=Bxd5E3kmcTA5V_Kr" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>About SSU!
-                    </h3>
+            </div>
+        </div>
+
+        <div id="faq_3" class="faq">
+            <div class="slide">
+                <div class="faq-content">SSUIMUN’s Impact</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/EvxpaeGV9GY?si=q7plut1ot0fC-zFB" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>SSUIMUN’s Impact
-                    </h3>
+            </div>
+        </div>
+
+        <div id="faq_4" class="faq">
+            <div class="slide">
+                <div class="faq-content">Why Choose SSUIMUN? (USP)</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/EKTtdqHJcPg?si=0kxXvVkcDaNtwnz3" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>Why Choose SSUIMUN? (USP)
-                    </h3>
+            </div>
+        </div>
+
+        <div id="faq_5" class="faq">
+            <div class="slide">
+                <div class="faq-content">SSUIMUN’s Inspiration</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/UTElC6vEUF0?si=u4Nlq4jTBDlthgj7" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>SSUIMUN’s Inspiration
-                    </h3>
+            </div>
+        </div>
+
+        <div id="faq_6" class="faq">
+            <div class="slide">
+                <div class="faq-content">Perks?</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/WmqZVQZa7Xw?si=AQ4ECZsv61HGeppx" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>Perks?
-                    </h3>
+            </div>
+        </div>
+
+        <div id="faq_7" class="faq">
+            <div class="slide">
+                <div class="faq-content">Quick Rapid Fire</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/N7UZYzC9JoY?si=vESD4QbH7vRpmY6S" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>Quick Rapid Fire
-                    </h3>
+            </div>
+        </div>
+
+        <div id="faq_8" class="faq">
+            <div class="slide">
+                <div class="faq-content">Secretariat Welcomes You</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/fw3uwo9nJ6w?si=R5ue4QNk2P54nPvU" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>Secretariat Welcomes You
-                    </h3>
+            </div>
+        </div>
+
+        <div id="faq_9" class="faq">
+            <div class="slide">
+                <div class="faq-content">What Is SSUIMUN</div>
+                <div id="arrow" class="">
+                    <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m3.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675T.825 12q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z" />
+                    </svg>
                 </div>
             </div>
-    
+
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/iHGpEZKcfpk?si=jfCSmlAWd4zSA4Zq" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-    
-                <div class="video-card-content">
-                    <h3>What Is SSUIMUN
-                    </h3>
-                </div>
             </div>
         </div>
 
+    </div>
 
-        <!-- Sponsors -->
+        <!-- FAQ Video -->
+    <!-- 
 
-        <div class="my-12">
-            <h1 class="text-[51px] text-center font-semibold">
-                Our Sponsors & Partners
-            </h1>
+    <div class="video-container">
+
+    </div>
+-->
+
+
+    <!-- Sponsors -->
+
+    <div class="my-12">
+        <h1 class="text-[51px] text-center font-semibold">
+            Our Sponsors & Partners
+        </h1>
+    </div>
+
+
+    <logo-slider>
+        <div>
+            <img src="./2023/Images/Sponsors/sp1.png" />
+            <img src="./2023/Images/Sponsors/sp2.png" />
+            <img src="./2023/Images/Sponsors/sp3.png" />
+            <img src="./2023/Images/Sponsors/sp4.png" />
+            <img src="./2023/Images/Sponsors/sp5.png" />
+            <img src="./2023/Images/Sponsors/sp6.png" />
+            <img src="./2023/Images/Sponsors/sp7.png" />
+            <img src="./2023/Images/Sponsors/sp8.png" />
+            <img src="./2023/Images/Sponsors/sp9.png" />
+            <img src="./2023/Images/Sponsors/sp10.png" />
+            <!-- <img src="./Images/home_page_images/sp11.png" /> -->
+            <!-- <img src="./Images/home_page_images/sp11.png" /> -->
+            <!-- <img src="./Images/home_page_images/sp1.png" /> -->
+            <!-- <img src="./Images/home_page_images/sp1.png" /> -->
         </div>
+    </logo-slider>
+    <!-- Footer -->
 
-        <logo-slider>
-            <div>
-                <img src="./2023/Images/Sponsors/sp1.png" />
-                <img src="./2023/Images/Sponsors/sp2.png" />
-                <img src="./2023/Images/Sponsors/sp3.png" />
-                <img src="./2023/Images/Sponsors/sp4.png" />
-                <img src="./2023/Images/Sponsors/sp5.png" />
-                <img src="./2023/Images/Sponsors/sp6.png" />
-                <img src="./2023/Images/Sponsors/sp7.png" />
-                <img src="./2023/Images/Sponsors/sp8.png" />
-                <img src="./2023/Images/Sponsors/sp9.png" />
-                <img src="./2023/Images/Sponsors/sp10.png" />
-                <!-- <img src="./Images/home_page_images/sp11.png" /> -->
-                <!-- <img src="./Images/home_page_images/sp11.png" /> -->
-                <!-- <img src="./Images/home_page_images/sp1.png" /> -->
-                <!-- <img src="./Images/home_page_images/sp1.png" /> -->
-            </div>
-        </logo-slider>
-<!-- Footer -->
+    <div id="footer" class="max-w-[1470px] w-[90%] mx-auto my-12">
+        <div class="flex flex-col items-center border-t mt-[20px] w-full">
+            <div class="content">
+                <div class="social-nav">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/ssuimun/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" />
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/ssuimun/mycompany/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/ssuimun" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ssuinternationalmun" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                                    <path fill="currentColor"
+                                        d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z" />
+                                </svg></a>
+                        </li>
 
-        <div id="footer" class="max-w-[1470px] w-[90%] mx-auto my-12">
-            <div class="flex flex-col items-center border-t mt-[20px] w-full">
-                <div class="content">
-                    <div class="social-nav">
-                        <ul>
-                            <li>
-                                <a href="https://www.instagram.com/ssuimun/" target="_blank"
-                                    ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/ssuimun/mycompany/" target="_blank"> 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/ssuimun" target="_blank"
-                                    ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/></svg></a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/@ssuinternationalmun" target="_blank"
-                                    ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z"/></svg></a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                    <div class="footer-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-                <div class="rights">
-                    <div>
-                        <p></p>
-                    </div>
-                    <div>
-                        <p>All rights reserverd &copy; 2024</p>
-                    </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rights">
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <p>All rights reserverd &copy; 2024</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Navbar-Script  -->
-        <script>
-            function onClickMenu() {
-                document
-                    .getElementById("hamburger-menu")
-                    .classList.toggle("icon");
-                document
-                    .getElementById("mobile-menu")
-                    .classList.toggle("change");
+    <!-- Navbar-Script  -->
+    <script>
+        function onClickMenu() {
+            document
+                .getElementById("hamburger-menu")
+                .classList.toggle("icon");
+            document
+                .getElementById("mobile-menu")
+                .classList.toggle("change");
+        }
+    </script>
+
+    <!-- Pre-loder Script -->
+    <script>
+        document.body.classList.add('overflow-hidden');
+        const wordsArr = ["IGNITE", "INSIPRE", "IMPACT", ""];
+        const container = document.querySelector(`#pre-loader .bg-black`);
+        const delay = (delayInms) => {
+            return new Promise((resolve) => setTimeout(resolve, delayInms));
+        };
+        (async function animate() {
+            for (let i = 0; i < wordsArr.length; i++) {
+                await delay(1000);
+                container.textContent = wordsArr[i];
             }
-        </script>
 
-        <!-- Pre-loder Script -->
-        <script>
-            document.body.classList.add('overflow-hidden');
-            const wordsArr = ["IGNITE", "INSIPRE", "IMPACT", ""];
-            const container = document.querySelector(`#pre-loader .bg-black`);
-            const delay = (delayInms) => {
-                return new Promise((resolve) => setTimeout(resolve, delayInms));
-            };
-            (async function animate() {
-                for (let i = 0; i < wordsArr.length; i++) {
-                    await delay(1000);
-                    container.textContent = wordsArr[i];
-                }
+            container.style.animation = "animateTop 1s forwards";
+            container.classList.add("hidden");
+            document.body.classList.remove('overflow-hidden');
+        })();
+    </script>
 
-                container.style.animation = "animateTop 1s forwards";
-                container.classList.add("hidden");
-                document.body.classList.remove('overflow-hidden');
-            })();
-        </script>
+    <script>
+        class LogoSlider extends HTMLElement {
+            connectedCallback() {
+                this.boundUpdateVariableDuration =
+                    this.updateVariableDuration.bind(this);
+                window.addEventListener(
+                    "resize",
+                    this.boundUpdateVariableDuration
+                );
+                this.boundUpdateVariableDuration();
 
-        <script>
-            class LogoSlider extends HTMLElement {
-                connectedCallback() {
-                    this.boundUpdateVariableDuration =
-                        this.updateVariableDuration.bind(this);
-                    window.addEventListener(
-                        "resize",
-                        this.boundUpdateVariableDuration
-                    );
-                    this.boundUpdateVariableDuration();
+                Array.from(this.firstElementChild.children).forEach(
+                    (child) =>
+                        this.firstElementChild.append(child.cloneNode(true))
+                );
+            }
 
-                    Array.from(this.firstElementChild.children).forEach(
-                        (child) =>
-                            this.firstElementChild.append(child.cloneNode(true))
-                    );
-                }
+            disconnectedCallback() {
+                window.removeEventListener(
+                    "resize",
+                    this.boundUpdateVariableDuration
+                );
+            }
 
-                disconnectedCallback() {
-                    window.removeEventListener(
-                        "resize",
-                        this.boundUpdateVariableDuration
-                    );
-                }
-
-                updateVariableDuration() {
-                    this.firstElementChild.style.animation = "initial";
-                    const computedStyle = getComputedStyle(this);
-                    const minWidth = parseInt(
-                        computedStyle.minWidth || 320,
-                        10
-                    );
-                    const maxWidth = parseInt(
-                        computedStyle.maxWidth || 1920,
-                        10
-                    );
-                    const windowWidth = window.innerWidth;
-                    const normalized = Math.min(
-                        1,
-                        Math.max(
-                            0,
-                            parseFloat(
-                                (
-                                    (windowWidth - minWidth) /
-                                    (maxWidth - minWidth)
-                                ).toFixed(2)
-                            )
+            updateVariableDuration() {
+                this.firstElementChild.style.animation = "initial";
+                const computedStyle = getComputedStyle(this);
+                const minWidth = parseInt(
+                    computedStyle.minWidth || 320,
+                    10
+                );
+                const maxWidth = parseInt(
+                    computedStyle.maxWidth || 1920,
+                    10
+                );
+                const windowWidth = window.innerWidth;
+                const normalized = Math.min(
+                    1,
+                    Math.max(
+                        0,
+                        parseFloat(
+                            (
+                                (windowWidth - minWidth) /
+                                (maxWidth - minWidth)
+                            ).toFixed(2)
                         )
-                    );
-                    this.style.setProperty(
-                        "--variable-duration",
-                        `${normalized}s`
-                    );
-                    setTimeout(() => {
-                        this.firstElementChild.style.animation = "";
-                    }, 500);
-                }
+                    )
+                );
+                this.style.setProperty(
+                    "--variable-duration",
+                    `${normalized}s`
+                );
+                setTimeout(() => {
+                    this.firstElementChild.style.animation = "";
+                }, 500);
             }
+        }
 
-            if (!customElements.get("logo-slider")) {
-                customElements.define("logo-slider", LogoSlider);
-            }
-        </script>
-    </body>
+        if (!customElements.get("logo-slider")) {
+            customElements.define("logo-slider", LogoSlider);
+        }
+    </script>
+
+    <script src="./faq.js"></script>
+</body>
+
 </html>

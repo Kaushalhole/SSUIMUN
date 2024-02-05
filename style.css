@@ -15,6 +15,48 @@ body {
     /* background-color: #fff7ed; */
 }
 
+.faq-outer{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1470px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.faq-content {
+    font-size: 21px;
+}
+
+
+.faq{
+    border: 1px solid black;
+    /* width: 92%; */
+    /* margin: auto; */
+    border-radius: 10px;
+    /* height: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 22px;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.slide{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.arrow-direction{
+    transform: rotate(180deg);
+}
+
+
 /* campus ambassador */
 /* 
 #campus{
@@ -30,37 +72,23 @@ body {
 
 .video-container {
     display: flex;
-    gap: 25px;
+    /* gap: 25px; */
     flex-wrap: wrap;
 }
 
 .video-card {
     position: relative;
-    width: 400px;
-    margin: auto;
+    aspect-ratio: 16/9;
+    /* margin: auto; */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     overflow: hidden;
+    display: none;
 }
 
 .video-card iframe {
     width: 100%;
-    height: 350px;
-}
-
-.video-card-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.video-card:hover .video-card-content {
-    display: none;
+    height: 100%;
 }
 
 /* Pre-loder  */
